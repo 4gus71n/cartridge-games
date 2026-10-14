@@ -1,1 +1,28 @@
-{"games": []}
+{
+  "games": [
+    {
+      "slug": "minefield",
+      "version": 1,
+      "title": "Minefield",
+      "title_es": "Buscaminas",
+      "description": "No-guess minesweeper: every board can be cleared with pure logic.",
+      "description_es": "Buscaminas sin adivinar: todos los tableros se resuelven con lógica.",
+      "author": "Cartridge Studio",
+      "license": "All rights reserved",
+      "orientation": "portrait",
+      "tags": [
+        "puzzle",
+        "logic",
+        "classic"
+      ],
+      "poster_style": "MINE",
+      "accent_top": "#0B0E18",
+      "accent_bottom": "#3A1424",
+      "play_url": "https://4gus71n.github.io/cartridge-games/minefield/index.html",
+      "package_url": "https://4gus71n.github.io/cartridge-games/packages/minefield.zip",
+      "package_sha256": "accb219df0f7f8eabdb87cd89c3fa46d044f5a6151e1d005a8aef7b48a98c838",
+      "package_bytes": 10223326,
+      "updated_at": "2026-10-14T06:25:34+00:00"
+    }
+  ]
+}
