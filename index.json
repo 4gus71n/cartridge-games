@@ -26,6 +26,31 @@
       "updated_at": "2026-10-16T10:02:28+00:00"
     },
     {
+      "slug": "pentaprism",
+      "version": 1,
+      "title": "Pentaprism",
+      "title_es": "Pentaprisma",
+      "description": "Drop two-colour pentominoes, match 4 gems, chain the cascades.",
+      "description_es": "Deja caer pentominós bicolores, junta 4 gemas y encadena cascadas.",
+      "author": "Cartridge Studio",
+      "license": "All rights reserved",
+      "orientation": "portrait",
+      "tags": [
+        "puzzle",
+        "arcade",
+        "falling-blocks"
+      ],
+      "poster_style": "TAP",
+      "accent_top": "#0D0B1E",
+      "accent_bottom": "#3A1F6B",
+      "play_url": "https://4gus71n.github.io/cartridge-games/pentaprism/index.html",
+      "package_url": "https://4gus71n.github.io/cartridge-games/packages/pentaprism.zip",
+      "package_sha256": "cfcab95ef2f9fcece91a19878b70274d0217a1a3ab55f70c1d24587835a24c4d",
+      "package_bytes": 10245013,
+      "thumbnail_url": "https://4gus71n.github.io/cartridge-games/pentaprism/poster.png?v=79c197fdd9",
+      "updated_at": "2026-10-16T22:10:38+00:00"
+    },
+    {
       "slug": "trajectory",
       "version": 1,
       "title": "Trajectory",
