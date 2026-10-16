@@ -1,6 +1,6 @@
 {
   "slug": "minefield",
-  "version": 1,
+  "version": 2,
   "title": "Minefield",
   "title_es": "Buscaminas",
   "description": "No-guess minesweeper: every board can be cleared with pure logic.",
