@@ -24,6 +24,31 @@
       "package_bytes": 10223584,
       "thumbnail_url": "",
       "updated_at": "2026-10-16T10:02:28+00:00"
+    },
+    {
+      "slug": "trajectory",
+      "version": 1,
+      "title": "Trajectory",
+      "title_es": "Trayectoria",
+      "description": "Steer a rocket with math: write y = f(x) to fly through every target.",
+      "description_es": "Guía un cohete con matemáticas: escribe y = f(x) y pasa por todos los objetivos.",
+      "author": "Cartridge Studio",
+      "license": "All rights reserved",
+      "orientation": "portrait",
+      "tags": [
+        "puzzle",
+        "math",
+        "education"
+      ],
+      "poster_style": "TAP",
+      "accent_top": "#0B0E18",
+      "accent_bottom": "#0E3346",
+      "play_url": "https://4gus71n.github.io/cartridge-games/trajectory/index.html",
+      "package_url": "https://4gus71n.github.io/cartridge-games/packages/trajectory.zip",
+      "package_sha256": "c8b2bb721d839c25ac903cd5a72fe87a9f0d3a2308c837e913e0863665655edd",
+      "package_bytes": 10278487,
+      "thumbnail_url": "https://4gus71n.github.io/cartridge-games/trajectory/poster.png?v=92c2220cb2",
+      "updated_at": "2026-10-16T22:10:25+00:00"
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "slug": "trajectory",
+  "version": 1,
+  "title": "Trajectory",
+  "title_es": "Trayectoria",
+  "description": "Steer a rocket with math: write y = f(x) to fly through every target.",
+  "description_es": "Guía un cohete con matemáticas: escribe y = f(x) y pasa por todos los objetivos.",
+  "author": "Cartridge Studio",
+  "license": "All rights reserved",
+  "orientation": "portrait",
+  "tags": [
+    "puzzle",
+    "math",
+    "education"
+  ],
+  "poster_style": "TAP",
+  "accent_top": "#0B0E18",
+  "accent_bottom": "#0E3346"
+}
