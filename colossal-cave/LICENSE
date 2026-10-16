@@ -1,0 +1,40 @@
+Open Adventure — Colossal Cave Adventure 2.5, web build for Cartridge
+
+Colossal Cave Adventure
+  SPDX-FileCopyrightText: (C) 1977, 2005 by Will Crowther and Don Woods
+Open Adventure port
+  SPDX-FileCopyrightText: (C) Eric S. Raymond <esr@thyrsus.com>
+SPDX-License-Identifier: BSD-2-Clause
+Source: https://gitlab.com/esr/open-adventure
+Pinned commit: e6160529e70a8c7a06b9a5f190d69aa35c4c62f5 (tag 1.22)
+
+advent.js / advent.wasm are compiled from that source with Emscripten,
+with one small modification (engine/web.patch: an autosave hook before each
+command) and a readline shim (engine/web_shim.c). The original license text
+(COPYING) follows.
+
+------------------------------------------------------------------------
+		BSD 2-Clause LICENSE
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+1. Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="theme-color" content="#0d0b09">
+<title>Colossal Cave</title>
+<link rel="stylesheet" href="shell.css">
+</head>
+<body>
+<div id="app">
+  <header id="bar">
+    <div class="brand">
+      <svg class="lamp" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2h6v2h-1v2.2a6 6 0 0 1 4 5.6V18a2 2 0 0 1-2 2h-1v2H9v-2H8a2 2 0 0 1-2-2v-6.2a6 6 0 0 1 4-5.6V4H9z" fill="currentColor" opacity=".35"/><circle cx="12" cy="13" r="3.2" fill="currentColor"/></svg>
+      <span id="title" data-i18n="title">Colossal Cave</span>
+    </div>
+    <button id="menuBtn" class="iconbtn" aria-label="Menu" data-i18n-aria="menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+  </header>
+
+  <main id="log" aria-live="polite"></main>
+
+  <div id="endcard" hidden>
+    <span data-i18n="ended">Your adventure is over.</span>
+    <button id="againBtn" class="primary" data-i18n="playAgain">Play again</button>
+  </div>
+
+  <form id="inputRow" autocomplete="off">
+    <button type="button" id="histBtn" class="iconbtn" aria-label="Previous command" data-i18n-aria="history">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V6M6 11l6-6 6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="field">
+      <span class="caret">&gt;</span>
+      <input id="cmd" type="text" enterkeyhint="send" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off" maxlength="120" placeholder="Type a command…" data-i18n-ph="placeholder">
+      <button type="button" id="clearBtn" class="clear" aria-label="Clear" hidden>×</button>
+    </div>
+    <button type="submit" id="sendBtn" class="iconbtn send" aria-label="Send" data-i18n-aria="send">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </form>
+
+  <div id="chips" role="toolbar"></div>
+  <div id="pad" role="toolbar"></div>
+</div>
+
+<div id="sheet" class="overlay" hidden>
+  <div class="panel">
+    <h2 data-i18n="menu">Menu</h2>
+    <button class="row" id="newBtn" data-i18n="newGame">New game</button>
+    <div class="row split">
+      <span data-i18n="language">Language</span>
+      <span class="seg" id="langSeg"><button data-lang="en">EN</button><button data-lang="es">ES</button></span>
+    </div>
+    <div class="row split">
+      <span data-i18n="textSize">Text size</span>
+      <span class="seg" id="sizeSeg"><button data-size="16">A</button><button data-size="17">A</button><button data-size="18">A</button></span>
+    </div>
+    <button class="row" id="creditsBtn" data-i18n="credits">Credits &amp; license</button>
+    <p class="esnote" data-i18n="esNote"></p>
+    <button class="primary wide" id="closeSheet" data-i18n="close">Close</button>
+  </div>
+</div>
+
+<div id="histSheet" class="overlay" hidden>
+  <div class="panel tall">
+    <h2 data-i18n="history">Command history</h2>
+    <div class="scroll" id="histList"></div>
+    <button class="primary wide" id="closeHist" data-i18n="close">Close</button>
+  </div>
+</div>
+
+<div id="confirm" class="overlay" hidden>
+  <div class="panel">
+    <p data-i18n="newGameConfirm">Start over? Your current adventure will be lost.</p>
+    <div class="btns">
+      <button id="confirmNo" data-i18n="cancel">Cancel</button>
+      <button id="confirmYes" class="primary" data-i18n="startOver">Start over</button>
+    </div>
+  </div>
+</div>
+
+<div id="credits" class="overlay" hidden>
+  <div class="panel tall">
+    <h2 data-i18n="credits">Credits &amp; license</h2>
+    <div class="scroll">
+      <p class="attr">Colossal Cave Adventure by Will Crowther and Don Woods; Open Adventure port by Eric S. Raymond — BSD-2-Clause</p>
+      <p class="small" data-i18n="creditsBody"></p>
+      <p class="small">Source: https://gitlab.com/esr/open-adventure<br>Commit e6160529e70a8c7a06b9a5f190d69aa35c4c62f5 (1.22)</p>
+      <p class="small" data-i18n="creditsShell"></p>
+      <pre class="license">BSD 2-Clause LICENSE
+
+SPDX-FileCopyrightText: (C) 1977, 2005 by Will Crowther and Don Woods
+SPDX-FileCopyrightText: (C) Eric S. Raymond &lt;esr@thyrsus.com&gt;
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+      <p class="small">Emscripten runtime (advent.js): MIT / University of Illinois NCSA — see LICENSE.emscripten.</p>
+    </div>
+    <button class="primary wide" id="closeCredits" data-i18n="close">Close</button>
+  </div>
+</div>
+
+<script src="cavetext.js"></script>
+<script src="advent.js"></script>
+<script src="engine.js"></script>
+<script src="shell.js"></script>
+</body>
+</html>

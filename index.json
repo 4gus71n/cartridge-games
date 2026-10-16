@@ -1,6 +1,32 @@
 {
   "games": [
     {
+      "slug": "colossal-cave",
+      "version": 1,
+      "title": "Colossal Cave",
+      "title_es": "La Cueva Colosal",
+      "description": "The original 1977 text adventure: explore the cave, gather treasure, outwit the dwarves.",
+      "description_es": "La aventura de texto original de 1977: explora la cueva, reúne tesoros y burla a los enanos.",
+      "author": "Cartridge Studio",
+      "license": "All rights reserved",
+      "orientation": "portrait",
+      "tags": [
+        "adventure",
+        "text",
+        "classic",
+        "puzzle"
+      ],
+      "poster_style": "TAP",
+      "accent_top": "#0D0B09",
+      "accent_bottom": "#4A2E0C",
+      "play_url": "https://4gus71n.github.io/cartridge-games/colossal-cave/index.html",
+      "package_url": "https://4gus71n.github.io/cartridge-games/packages/colossal-cave.zip",
+      "package_sha256": "c1416416dd8f47bc29a0ff196b23322fe51ecf6205116e2f1313166221ea7014",
+      "package_bytes": 114390,
+      "thumbnail_url": "https://4gus71n.github.io/cartridge-games/colossal-cave/poster.png?v=d2b7fbfc17",
+      "updated_at": "2026-10-16T22:10:46+00:00"
+    },
+    {
       "slug": "minefield",
       "version": 2,
       "title": "Minefield",
