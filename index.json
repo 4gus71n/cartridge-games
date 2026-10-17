@@ -27,6 +27,32 @@
       "updated_at": "2026-10-16T22:10:46+00:00"
     },
     {
+      "slug": "crossword",
+      "version": 1,
+      "title": "Mini Crossword",
+      "title_es": "Minicrucigrama",
+      "description": "Bite-size 5×5 and 7×7 crosswords with original clues, plus a daily puzzle.",
+      "description_es": "Crucigramas de bolsillo de 5×5 y 7×7 con pistas originales y uno nuevo cada día.",
+      "author": "Cartridge Studio",
+      "license": "All rights reserved",
+      "orientation": "portrait",
+      "tags": [
+        "puzzle",
+        "word",
+        "crossword",
+        "daily"
+      ],
+      "poster_style": "TAP",
+      "accent_top": "#0B0E18",
+      "accent_bottom": "#5A3B00",
+      "play_url": "https://4gus71n.github.io/cartridge-games/crossword/index.html",
+      "package_url": "https://4gus71n.github.io/cartridge-games/packages/crossword.zip",
+      "package_sha256": "7384af69eb986c5351f4cdc8142dfa8018e88361c4e74cc85ab3d4c5c6208268",
+      "package_bytes": 10250946,
+      "thumbnail_url": "https://4gus71n.github.io/cartridge-games/crossword/poster.png?v=37e77da371",
+      "updated_at": "2026-10-17T09:00:27+00:00"
+    },
+    {
       "slug": "minefield",
       "version": 2,
       "title": "Minefield",

@@ -1,0 +1,20 @@
+{
+  "slug": "crossword",
+  "version": 1,
+  "title": "Mini Crossword",
+  "title_es": "Minicrucigrama",
+  "description": "Bite-size 5×5 and 7×7 crosswords with original clues, plus a daily puzzle.",
+  "description_es": "Crucigramas de bolsillo de 5×5 y 7×7 con pistas originales y uno nuevo cada día.",
+  "author": "Cartridge Studio",
+  "license": "All rights reserved",
+  "orientation": "portrait",
+  "tags": [
+    "puzzle",
+    "word",
+    "crossword",
+    "daily"
+  ],
+  "poster_style": "TAP",
+  "accent_top": "#0B0E18",
+  "accent_bottom": "#5A3B00"
+}
