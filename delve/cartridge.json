@@ -1,0 +1,20 @@
+{
+  "slug": "delve",
+  "version": 1,
+  "title": "Delve",
+  "title_es": "Delve",
+  "description": "A pocket roguelike: descend 12 floors, survive, and bring back the amulet.",
+  "description_es": "Un roguelike de bolsillo: baja 12 pisos, sobrevive y recupera el amuleto.",
+  "author": "Cartridge Studio",
+  "license": "All rights reserved",
+  "orientation": "portrait",
+  "tags": [
+    "roguelike",
+    "dungeon",
+    "rpg",
+    "strategy"
+  ],
+  "poster_style": "TAP",
+  "accent_top": "#0B0A10",
+  "accent_bottom": "#5A2E08"
+}

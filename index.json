@@ -53,6 +53,32 @@
       "updated_at": "2026-10-17T09:00:27+00:00"
     },
     {
+      "slug": "delve",
+      "version": 1,
+      "title": "Delve",
+      "title_es": "Delve",
+      "description": "A pocket roguelike: descend 12 floors, survive, and bring back the amulet.",
+      "description_es": "Un roguelike de bolsillo: baja 12 pisos, sobrevive y recupera el amuleto.",
+      "author": "Cartridge Studio",
+      "license": "All rights reserved",
+      "orientation": "portrait",
+      "tags": [
+        "roguelike",
+        "dungeon",
+        "rpg",
+        "strategy"
+      ],
+      "poster_style": "TAP",
+      "accent_top": "#0B0A10",
+      "accent_bottom": "#5A2E08",
+      "play_url": "https://4gus71n.github.io/cartridge-games/delve/index.html",
+      "package_url": "https://4gus71n.github.io/cartridge-games/packages/delve.zip",
+      "package_sha256": "80b2d76fee7169e1348d04eef0d55d4a4baeb52b58eafe153ddc5743d57708a5",
+      "package_bytes": 10324353,
+      "thumbnail_url": "https://4gus71n.github.io/cartridge-games/delve/poster.png?v=3664a0e82d",
+      "updated_at": "2026-10-17T17:42:09+00:00"
+    },
+    {
       "slug": "minefield",
       "version": 2,
       "title": "Minefield",
