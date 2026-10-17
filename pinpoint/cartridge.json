@@ -1,0 +1,21 @@
+{
+  "slug": "pinpoint",
+  "version": 1,
+  "title": "Pinpoint",
+  "title_es": "Pinpoint",
+  "description": "A photo from somewhere on Earth: drop a pin where you think it was taken.",
+  "description_es": "Una foto de algún lugar del mundo: pon un pin donde crees que se tomó.",
+  "author": "Cartridge Studio",
+  "license": "All rights reserved",
+  "orientation": "portrait",
+  "tags": [
+    "geography",
+    "trivia",
+    "photos",
+    "maps",
+    "education"
+  ],
+  "poster_style": "TAP",
+  "accent_top": "#0B0E18",
+  "accent_bottom": "#5A1E1A"
+}

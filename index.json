@@ -129,6 +129,33 @@
       "updated_at": "2026-10-16T22:10:38+00:00"
     },
     {
+      "slug": "pinpoint",
+      "version": 1,
+      "title": "Pinpoint",
+      "title_es": "Pinpoint",
+      "description": "A photo from somewhere on Earth: drop a pin where you think it was taken.",
+      "description_es": "Una foto de algún lugar del mundo: pon un pin donde crees que se tomó.",
+      "author": "Cartridge Studio",
+      "license": "All rights reserved",
+      "orientation": "portrait",
+      "tags": [
+        "geography",
+        "trivia",
+        "photos",
+        "maps",
+        "education"
+      ],
+      "poster_style": "TAP",
+      "accent_top": "#0B0E18",
+      "accent_bottom": "#5A1E1A",
+      "play_url": "https://4gus71n.github.io/cartridge-games/pinpoint/index.html",
+      "package_url": "https://4gus71n.github.io/cartridge-games/packages/pinpoint.zip",
+      "package_sha256": "5d229142f1ddc976b25775b6cb5fea2600d5a75ebe5b4f0e27c4dc3b54d59c3c",
+      "package_bytes": 24430871,
+      "thumbnail_url": "https://4gus71n.github.io/cartridge-games/pinpoint/poster.png?v=03c0863a7f",
+      "updated_at": "2026-10-17T17:42:21+00:00"
+    },
+    {
       "slug": "right-of-way",
       "version": 1,
       "title": "Right of Way",
