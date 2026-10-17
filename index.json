@@ -77,6 +77,32 @@
       "updated_at": "2026-10-16T22:10:38+00:00"
     },
     {
+      "slug": "right-of-way",
+      "version": 1,
+      "title": "Right of Way",
+      "title_es": "Prioridad",
+      "description": "A road sign flashes up: pick the right move before the clock runs out.",
+      "description_es": "Aparece una señal de tránsito: elige qué hacer antes de que se acabe el tiempo.",
+      "author": "Cartridge Studio",
+      "license": "All rights reserved",
+      "orientation": "portrait",
+      "tags": [
+        "reaction",
+        "trivia",
+        "education",
+        "driving"
+      ],
+      "poster_style": "TAP",
+      "accent_top": "#0B0E18",
+      "accent_bottom": "#4A3200",
+      "play_url": "https://4gus71n.github.io/cartridge-games/right-of-way/index.html",
+      "package_url": "https://4gus71n.github.io/cartridge-games/packages/right-of-way.zip",
+      "package_sha256": "aea77645773d41ee702538fcba6385bcd272ef70e58338f8c4a99094d1352fc0",
+      "package_bytes": 10273751,
+      "thumbnail_url": "https://4gus71n.github.io/cartridge-games/right-of-way/poster.png?v=3f0d40e8ab",
+      "updated_at": "2026-10-17T08:39:38+00:00"
+    },
+    {
       "slug": "trajectory",
       "version": 1,
       "title": "Trajectory",

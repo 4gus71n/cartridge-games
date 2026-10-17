@@ -1,0 +1,20 @@
+{
+  "slug": "right-of-way",
+  "version": 1,
+  "title": "Right of Way",
+  "title_es": "Prioridad",
+  "description": "A road sign flashes up: pick the right move before the clock runs out.",
+  "description_es": "Aparece una señal de tránsito: elige qué hacer antes de que se acabe el tiempo.",
+  "author": "Cartridge Studio",
+  "license": "All rights reserved",
+  "orientation": "portrait",
+  "tags": [
+    "reaction",
+    "trivia",
+    "education",
+    "driving"
+  ],
+  "poster_style": "TAP",
+  "accent_top": "#0B0E18",
+  "accent_bottom": "#4A3200"
+}
