@@ -1,0 +1,20 @@
+{
+  "slug": "sudoku",
+  "version": 1,
+  "title": "Sudoku",
+  "title_es": "Sudoku",
+  "description": "Classic 9×9 sudoku: hand-graded puzzles, pencil marks, hints and a daily streak.",
+  "description_es": "Sudoku clásico 9×9: puzles graduados, notas, pistas y racha diaria.",
+  "author": "Cartridge Studio",
+  "license": "All rights reserved",
+  "orientation": "portrait",
+  "tags": [
+    "puzzle",
+    "logic",
+    "numbers",
+    "daily"
+  ],
+  "poster_style": "TAP",
+  "accent_top": "#0B0E18",
+  "accent_bottom": "#4A2A08"
+}

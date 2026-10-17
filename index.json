@@ -103,6 +103,32 @@
       "updated_at": "2026-10-17T08:39:38+00:00"
     },
     {
+      "slug": "sudoku",
+      "version": 1,
+      "title": "Sudoku",
+      "title_es": "Sudoku",
+      "description": "Classic 9×9 sudoku: hand-graded puzzles, pencil marks, hints and a daily streak.",
+      "description_es": "Sudoku clásico 9×9: puzles graduados, notas, pistas y racha diaria.",
+      "author": "Cartridge Studio",
+      "license": "All rights reserved",
+      "orientation": "portrait",
+      "tags": [
+        "puzzle",
+        "logic",
+        "numbers",
+        "daily"
+      ],
+      "poster_style": "TAP",
+      "accent_top": "#0B0E18",
+      "accent_bottom": "#4A2A08",
+      "play_url": "https://4gus71n.github.io/cartridge-games/sudoku/index.html",
+      "package_url": "https://4gus71n.github.io/cartridge-games/packages/sudoku.zip",
+      "package_sha256": "84ea4e72df037238e808aefe31200d4a612e2cd7120f317d7f353d2af764333a",
+      "package_bytes": 10294567,
+      "thumbnail_url": "https://4gus71n.github.io/cartridge-games/sudoku/poster.png?v=5af58854ad",
+      "updated_at": "2026-10-17T08:54:51+00:00"
+    },
+    {
       "slug": "trajectory",
       "version": 1,
       "title": "Trajectory",
