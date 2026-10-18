@@ -376,16 +376,16 @@
    "poster_style": "HOLE",
    "slug": "portal-test-cave",
    "source_url": "https://gitlab.com/esr/open-adventure",
-   "status": "verified",
+   "status": "taken_down",
    "tags": "community",
-   "taken_down": false,
+   "taken_down": true,
    "thumbnail_url": "https://4gus71n.github.io/cartridge-games/shots/portal-test-cave-v1.png",
    "title": "Portal Test Cave",
    "title_es": "",
-   "updated_at": "2026-10-18T19:13:03.933483",
+   "updated_at": "2026-10-18T19:15:03.131121",
    "version": 1
   }
  ],
- "generated_at": "2026-10-18T19:13:05+00:00",
- "sha256": "92eeb64e4979913eb18f3f6c292210055f8a9412ca8d231caa575eeb93ef24d0"
+ "generated_at": "2026-10-18T19:15:05+00:00",
+ "sha256": "8f4f9034d88722d5d29d1e0d52676efa00f9b93fa63fc176506bb644b8eed79c"
 }
