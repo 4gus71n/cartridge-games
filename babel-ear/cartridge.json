@@ -1,0 +1,21 @@
+{
+  "slug": "babel-ear",
+  "version": 1,
+  "title": "Babel Ear",
+  "title_es": "Oído de Babel",
+  "description": "Hear a real voice reading a book, guess which language it is.",
+  "description_es": "Escucha una voz real leyendo un libro y adivina en qué idioma habla.",
+  "author": "Cartridge Studio",
+  "license": "All rights reserved",
+  "orientation": "portrait",
+  "tags": [
+    "languages",
+    "audio",
+    "trivia",
+    "quiz",
+    "education"
+  ],
+  "poster_style": "TAP",
+  "accent_top": "#0D0B1E",
+  "accent_bottom": "#0E4D4A"
+}
