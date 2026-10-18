@@ -360,8 +360,32 @@
    "title_es": "Oído de Babel",
    "updated_at": "2026-10-18T18:59:34.435792",
    "version": 1
+  },
+  {
+   "accent_bottom": "#78350F",
+   "accent_top": "#1C1917",
+   "author": "QA Creator",
+   "bundled": false,
+   "description": "End-to-end test of the creator portal (Open Adventure).",
+   "description_es": "",
+   "license_spdx": "BSD-2-Clause",
+   "orientation": "portrait",
+   "package_sha256": "c1416416dd8f47bc29a0ff196b23322fe51ecf6205116e2f1313166221ea7014",
+   "package_url": "https://4gus71n.github.io/cartridge-games/packages/colossal-cave.zip",
+   "play_url": "https://4gus71n.github.io/cartridge-games/colossal-cave/index.html",
+   "poster_style": "HOLE",
+   "slug": "portal-test-cave",
+   "source_url": "https://gitlab.com/esr/open-adventure",
+   "status": "verified",
+   "tags": "community",
+   "taken_down": false,
+   "thumbnail_url": "https://4gus71n.github.io/cartridge-games/shots/portal-test-cave-v1.png",
+   "title": "Portal Test Cave",
+   "title_es": "",
+   "updated_at": "2026-10-18T19:13:03.933483",
+   "version": 1
   }
  ],
- "generated_at": "2026-10-18T18:59:34+00:00",
- "sha256": "b65c26da104876a06cddb898ebbcb0de6caf938e1df03af8c924eb779dd187cc"
+ "generated_at": "2026-10-18T19:13:05+00:00",
+ "sha256": "92eeb64e4979913eb18f3f6c292210055f8a9412ca8d231caa575eeb93ef24d0"
 }
