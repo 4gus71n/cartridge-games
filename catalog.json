@@ -154,7 +154,7 @@
    "description_es": "La aventura de texto original de 1977: explora la cueva, reúne tesoros y burla a los enanos.",
    "license_spdx": "All rights reserved",
    "orientation": "portrait",
-   "package_sha256": "c1416416dd8f47bc29a0ff196b23322fe51ecf6205116e2f1313166221ea7014",
+   "package_sha256": "634d2ce98eb33a7080ead11e3f1ece83556746148198d1ae69bcb6b90fe783ed",
    "package_url": "https://4gus71n.github.io/cartridge-games/packages/colossal-cave.zip",
    "play_url": "https://4gus71n.github.io/cartridge-games/colossal-cave/index.html",
    "poster_style": "TAP",
@@ -166,8 +166,8 @@
    "thumbnail_url": "https://4gus71n.github.io/cartridge-games/colossal-cave/poster.png?v=d2b7fbfc17",
    "title": "Colossal Cave",
    "title_es": "La Cueva Colosal",
-   "updated_at": "2026-10-18T18:59:34.435789",
-   "version": 1
+   "updated_at": "2026-10-21T16:29:23.188650",
+   "version": 2
   },
   {
    "accent_bottom": "#3A1F6B",
@@ -386,6 +386,6 @@
    "version": 1
   }
  ],
- "generated_at": "2026-10-21T16:09:19+00:00",
- "sha256": "e142644810841c0b87712f08650c72409917b69271b3452868fa475c3386dfac"
+ "generated_at": "2026-10-21T16:29:23+00:00",
+ "sha256": "03a2e60af0172e2d56fe4713ce9b8125fa05552921ef1851cc3038e1b8b1d186"
 }
