@@ -14,12 +14,23 @@
       <svg class="lamp" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2h6v2h-1v2.2a6 6 0 0 1 4 5.6V18a2 2 0 0 1-2 2h-1v2H9v-2H8a2 2 0 0 1-2-2v-6.2a6 6 0 0 1 4-5.6V4H9z" fill="currentColor" opacity=".35"/><circle cx="12" cy="13" r="3.2" fill="currentColor"/></svg>
       <span id="title" data-i18n="title">Colossal Cave</span>
     </div>
+    <button id="mapBtn" class="iconbtn" aria-label="Map" data-i18n-aria="map">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+        <path d="M9 4 3 6.2v14L9 18l6 2 6-2.2v-14L15 6 9 4Z"/><path d="M9 4v14M15 6v14"/>
+      </svg>
+    </button>
     <button id="menuBtn" class="iconbtn" aria-label="Menu" data-i18n-aria="menu">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
     </button>
   </header>
 
   <main id="log" aria-live="polite"></main>
+
+  <!-- Auto-drawn minimap: a corner thumbnail that expands to a full sheet. -->
+  <div id="mapMini" hidden>
+    <canvas id="mapMiniCanvas" width="240" height="240"></canvas>
+    <span id="mapMiniRoom"></span>
+  </div>
 
   <div id="endcard" hidden>
     <span data-i18n="ended">Your adventure is over.</span>
@@ -56,9 +67,19 @@
       <span data-i18n="textSize">Text size</span>
       <span class="seg" id="sizeSeg"><button data-size="16">A</button><button data-size="17">A</button><button data-size="18">A</button></span>
     </div>
+    <button class="row" id="openMapRow" data-i18n="mapTitle">Map</button>
     <button class="row" id="creditsBtn" data-i18n="credits">Credits &amp; license</button>
     <p class="esnote" data-i18n="esNote"></p>
     <button class="primary wide" id="closeSheet" data-i18n="close">Close</button>
+  </div>
+</div>
+
+<div id="mapSheet" class="overlay" hidden>
+  <div class="panel map">
+    <h2 id="mapTitle" data-i18n="mapTitle">Map</h2>
+    <div class="mapwrap"><canvas id="mapCanvas"></canvas></div>
+    <p id="mapHint" class="hint" data-i18n="mapHint">Rooms you have visited. Dashed links are magic or falls.</p>
+    <button class="primary wide" id="closeMap" data-i18n="close">Close</button>
   </div>
 </div>
 
@@ -107,6 +128,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 </div>
 
 <script src="cavetext.js"></script>
+<script src="mapdata.js"></script>
+<script src="cavemap.js"></script>
 <script src="advent.js"></script>
 <script src="engine.js"></script>
 <script src="shell.js"></script>

@@ -13,6 +13,7 @@
   var KEY = {
     save: "cave.save.v1", log: "cave.log.v1", hist: "cave.hist.v1",
     ended: "cave.ended.v1", lang: "cave.lang", size: "cave.size",
+    map: "cave.map.v1", mapOn: "cave.mapon.v1",
   };
   var MAX_LOG_CHARS = 60000;
   var MAX_HIST = 40;
@@ -22,6 +23,9 @@
     en: {
       title: "Colossal Cave", menu: "Menu", newGame: "New game", language: "Language",
       textSize: "Text size", credits: "Credits & license", close: "Close",
+      mapTitle: "Map", map: "Map",
+      mapHint: "Rooms you have visited. Dashed links are magic or falls.",
+      mapEmpty: "Explore to draw the map.",
       placeholder: "Type a command…", send: "Send", history: "Command history",
       historyEmpty: "No commands yet.", ended: "Your adventure is over.", playAgain: "Play again",
       newGameConfirm: "Start over? Your current adventure will be lost.", cancel: "Cancel",
@@ -36,6 +40,9 @@
     es: {
       title: "La Cueva Colosal", menu: "Menú", newGame: "Nueva partida", language: "Idioma",
       textSize: "Tamaño de texto", credits: "Créditos y licencia", close: "Cerrar",
+      mapTitle: "Mapa", map: "Mapa",
+      mapHint: "Salas que has visitado. Las líneas punteadas son magia o caídas.",
+      mapEmpty: "Explora para dibujar el mapa.",
       placeholder: "Escribe una orden…", send: "Enviar", history: "Historial de órdenes",
       historyEmpty: "Aún no hay órdenes.", ended: "Tu aventura ha terminado.", playAgain: "Jugar de nuevo",
       newGameConfirm: "¿Empezar de nuevo? Perderás la aventura actual.", cancel: "Cancelar",
@@ -79,6 +86,7 @@
     document.querySelectorAll("#langSeg button").forEach(function (b) { b.classList.toggle("on", b.dataset.lang === lang); });
     buildPad();
     renderChips();
+    if (typeof refreshMap === "function") refreshMap();
   }
 
   // ---------------------------------------------------------------- text size
@@ -170,6 +178,7 @@
       onSave: function (bytes) {
         if (my !== gen) return;
         store(KEY.save, T.toB64(bytes));
+        trackLocation(bytes);
       },
       onExit: function () {
         if (my !== gen) return;
@@ -193,6 +202,7 @@
   }
 
   function showEnd() {
+    $("mapMini").hidden = true;
     $("endcard").hidden = false;
     app.classList.add("over");
     input.blur();
@@ -201,6 +211,9 @@
   }
 
   function newGame() {
+    cmap.reset();
+    store(KEY.map, null);
+    refreshMap();
     store(KEY.save, null);
     store(KEY.ended, null);
     store(KEY.log, null);
@@ -224,6 +237,7 @@
     store(KEY.hist, JSON.stringify(history));
     histPos = history.length;
     busy = true;
+    lastCmd = cmd;
     renderChips();
     scrollDown();
     session.send(cmd);
@@ -482,10 +496,144 @@
   input.addEventListener("focus", function () { setTimeout(fitViewport, 60); setTimeout(fitViewport, 400); });
   input.addEventListener("blur", function () { setTimeout(fitViewport, 60); });
 
+  // ---------------------------------------------------------------- minimap
+  // CaveMap holds the graph; here we only persist it and draw it.
+  var cmap = new CaveMap(window.ROOM_LABELS || []);
+  var lastCmd = "";
+  (function restoreMap() {
+    var raw = load(KEY.map);
+    if (raw) { try { cmap.load(JSON.parse(raw)); } catch (e) { /* corrupt: start fresh */ } }
+  })();
+
+  function saveMap() { store(KEY.map, JSON.stringify(cmap.toJSON())); }
+
+
+  /** Draws the graph into a canvas; `full` adds labels and a bigger scale. */
+  function drawMap(canvas, full) {
+    var v = cmap.view();
+    var ctx = canvas.getContext("2d");
+    var ratio = window.devicePixelRatio || 1;
+    var cssW = canvas.clientWidth || canvas.width;
+    var cssH = canvas.clientHeight || canvas.height;
+    if (canvas.width !== Math.round(cssW * ratio)) {
+      canvas.width = Math.round(cssW * ratio);
+      canvas.height = Math.round(cssH * ratio);
+    }
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    ctx.clearRect(0, 0, cssW, cssH);
+    ctx.fillStyle = "#140f0b";
+    ctx.fillRect(0, 0, cssW, cssH);
+    if (!v.rooms.length) return;
+
+    var cols = v.bounds.x1 - v.bounds.x0 + 1;
+    var rows = v.bounds.y1 - v.bounds.y0 + 1;
+    var pad = full ? 26 : 10;
+    var cell = Math.min((cssW - pad * 2) / cols, (cssH - pad * 2) / rows);
+    cell = Math.max(full ? 16 : 7, Math.min(cell, full ? 86 : 26));
+    var here = cmap.rooms[v.loc];
+    // Centre on the player when the map outgrows the canvas.
+    var originX, originY;
+    if (cols * cell <= cssW - pad * 2 && rows * cell <= cssH - pad * 2) {
+      originX = (cssW - cols * cell) / 2 - v.bounds.x0 * cell;
+      originY = (cssH - rows * cell) / 2 - v.bounds.y0 * cell;
+    } else {
+      var cx = here ? here.x : (v.bounds.x0 + v.bounds.x1) / 2;
+      var cy = here ? here.y : (v.bounds.y0 + v.bounds.y1) / 2;
+      originX = cssW / 2 - (cx + 0.5) * cell;
+      originY = cssH / 2 - (cy + 0.5) * cell;
+    }
+    function px(r) { return { x: originX + (r.x + 0.5) * cell, y: originY + (r.y + 0.5) * cell }; }
+
+    ctx.lineWidth = Math.max(1, cell * 0.06);
+    v.links.forEach(function (l) {
+      var a = cmap.rooms[l.a], b = cmap.rooms[l.b];
+      if (!a || !b) return;
+      var pa = px(a), pb = px(b);
+      ctx.strokeStyle = "#5b4a33";
+      ctx.setLineDash(l.dir ? [] : [Math.max(2, cell * 0.16), Math.max(2, cell * 0.12)]);
+      ctx.beginPath();
+      ctx.moveTo(pa.x, pa.y);
+      ctx.lineTo(pb.x, pb.y);
+      ctx.stroke();
+    });
+    ctx.setLineDash([]);
+
+    var r = Math.max(2, cell * (full ? 0.26 : 0.3));
+    v.rooms.forEach(function (room) {
+      var p = px(room);
+      var isHere = room.loc === v.loc;
+      ctx.fillStyle = isHere ? "#f2b54a" : (room.z < 0 ? "#6b573c" : "#8a7049");
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, isHere ? r * 1.25 : r, 0, Math.PI * 2);
+      ctx.fill();
+      if (isHere) {
+        ctx.strokeStyle = "rgba(242,181,74,0.45)";
+        ctx.lineWidth = Math.max(1, cell * 0.08);
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, r * 2, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+      if (full && cell >= 34) {
+        ctx.fillStyle = isHere ? "#ffe4ad" : "#a99d88";
+        ctx.font = Math.round(Math.min(11, cell * 0.18)) + "px system-ui, sans-serif";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "top";
+        // Clip to the cell so neighbouring labels never run into each other.
+        var label = cmap.label(room.loc);
+        var room_w = cell * 0.96;
+        while (label.length > 4 && ctx.measureText(label).width > room_w) {
+          label = label.slice(0, -2) + "\u2026";
+        }
+        ctx.fillText(label, p.x, p.y + r * 1.4);
+      }
+    });
+  }
+
+  var miniOn = load(KEY.mapOn) !== "0";
+
+  function refreshMap() {
+    var mini = $("mapMini");
+    var has = cmap.size() > 0;
+    mini.hidden = !has || ended || !miniOn;
+    $("mapBtn").classList.toggle("on", miniOn);
+    $("mapBtn").hidden = !has;
+    if (!has) return;
+    $("mapMiniRoom").textContent = cmap.loc !== null ? cmap.label(cmap.loc) : "";
+    drawMap($("mapMiniCanvas"), false);
+    if (!$("mapSheet").hidden) drawMap($("mapCanvas"), true);
+  }
+
+  /** Called after each turn: reads the location from the engine save. */
+  function trackLocation(bytes) {
+    var loc = CaveMap.locFromSave(bytes);
+    if (loc === null) return;
+    if (cmap.visit(loc, lastCmd)) saveMap();
+    refreshMap();
+  }
+
+  function openMap() {
+    $("mapSheet").hidden = false;
+    drawMap($("mapCanvas"), true);
+  }
+  $("mapMini").addEventListener("click", openMap);
+  $("openMapRow").addEventListener("click", function () {
+    $("sheet").hidden = true;
+    openMap();
+  });
+  // The thumbnail sits over the transcript, so let players fold it away; the
+  // full map stays reachable from the menu.
+  $("mapBtn").addEventListener("click", function () {
+    miniOn = !miniOn;
+    store(KEY.mapOn, miniOn ? "1" : "0");
+    refreshMap();
+  });
+  $("closeMap").addEventListener("click", function () { $("mapSheet").hidden = true; });
+
   // ---------------------------------------------------------------- boot
   applySize();
   applyLang();
   fitViewport();
+  refreshMap();
   if (load(KEY.ended) === "1" && !load(KEY.save) && entries.length) {
     renderAll();
     ended = true;
@@ -498,7 +646,13 @@
 
   // automation hook (smoke / poster capture)
   window.cave = {
-    state: function () { return { busy: busy, ended: ended, entries: entries.length, saved: !!load(KEY.save) }; },
+    state: function () {
+      return { busy: busy, ended: ended, entries: entries.length, saved: !!load(KEY.save),
+               rooms: cmap.size(), loc: cmap.loc };
+    },
     send: send,
+    openMap: function () { openMap(); },
+    toggleMini: function () { $("mapBtn").click(); },
+    closeMap: function () { $("closeMap").click(); },
   };
 })();

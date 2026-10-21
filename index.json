@@ -22,14 +22,14 @@
       "accent_bottom": "#0E4D4A",
       "play_url": "https://4gus71n.github.io/cartridge-games/babel-ear/index.html",
       "package_url": "https://4gus71n.github.io/cartridge-games/packages/babel-ear.zip",
-      "package_sha256": "43def8324452d0a3fd01cd79c051a26838ad58251817aad479813ddff8c96e56",
-      "package_bytes": 17884092,
+      "package_sha256": "316aa4bc9908c7776e256d8728d5d239a185b914a966ead1a607c4b9ffe55de1",
+      "package_bytes": 17885874,
       "thumbnail_url": "https://4gus71n.github.io/cartridge-games/babel-ear/poster.png?v=a8f0283cf9",
-      "updated_at": "2026-10-18T08:16:00+00:00"
+      "updated_at": "2026-10-21T07:47:41+00:00"
     },
     {
       "slug": "colossal-cave",
-      "version": 1,
+      "version": 2,
       "title": "Colossal Cave",
       "title_es": "La Cueva Colosal",
       "description": "The original 1977 text adventure: explore the cave, gather treasure, outwit the dwarves.",
@@ -48,10 +48,10 @@
       "accent_bottom": "#4A2E0C",
       "play_url": "https://4gus71n.github.io/cartridge-games/colossal-cave/index.html",
       "package_url": "https://4gus71n.github.io/cartridge-games/packages/colossal-cave.zip",
-      "package_sha256": "c1416416dd8f47bc29a0ff196b23322fe51ecf6205116e2f1313166221ea7014",
-      "package_bytes": 114390,
+      "package_sha256": "634d2ce98eb33a7080ead11e3f1ece83556746148198d1ae69bcb6b90fe783ed",
+      "package_bytes": 120824,
       "thumbnail_url": "https://4gus71n.github.io/cartridge-games/colossal-cave/poster.png?v=d2b7fbfc17",
-      "updated_at": "2026-10-16T22:10:46+00:00"
+      "updated_at": "2026-10-21T16:27:41+00:00"
     },
     {
       "slug": "crossword",
@@ -100,10 +100,10 @@
       "accent_bottom": "#5A2E08",
       "play_url": "https://4gus71n.github.io/cartridge-games/delve/index.html",
       "package_url": "https://4gus71n.github.io/cartridge-games/packages/delve.zip",
-      "package_sha256": "80b2d76fee7169e1348d04eef0d55d4a4baeb52b58eafe153ddc5743d57708a5",
-      "package_bytes": 10324353,
+      "package_sha256": "efce093232da6d32365690e4341c056ad4daaeac3f507daa0746294898a32390",
+      "package_bytes": 10325971,
       "thumbnail_url": "https://4gus71n.github.io/cartridge-games/delve/poster.png?v=3664a0e82d",
-      "updated_at": "2026-10-17T17:42:09+00:00"
+      "updated_at": "2026-10-21T07:47:27+00:00"
     },
     {
       "slug": "minefield",
@@ -125,18 +125,18 @@
       "accent_bottom": "#3A1424",
       "play_url": "https://4gus71n.github.io/cartridge-games/minefield/index.html",
       "package_url": "https://4gus71n.github.io/cartridge-games/packages/minefield.zip",
-      "package_sha256": "8f4bbc9a6d6c634c6829cfadf21547b292cc752080b251bfddc56d44c0709fa7",
-      "package_bytes": 10223584,
+      "package_sha256": "f9d4cb38997522efd482b3951e3f6a606ce9d65dc7ce4ebf5ab8eae56277e11a",
+      "package_bytes": 10225222,
       "thumbnail_url": "",
-      "updated_at": "2026-10-16T10:02:28+00:00"
+      "updated_at": "2026-10-21T07:46:30+00:00"
     },
     {
       "slug": "pentaprism",
-      "version": 1,
+      "version": 2,
       "title": "Pentaprism",
       "title_es": "Pentaprisma",
-      "description": "Drop two-colour pentominoes, match 4 gems, chain the cascades.",
-      "description_es": "Deja caer pentominós bicolores, junta 4 gemas y encadena cascadas.",
+      "description": "Pentominoes lock rigid: match 5 gems, clear rows, crack the rising stone.",
+      "description_es": "Los pentominós caen rígidos: junta 5 gemas, limpia filas, rompe la piedra que sube.",
       "author": "Cartridge Studio",
       "license": "All rights reserved",
       "orientation": "portrait",
@@ -150,14 +150,14 @@
       "accent_bottom": "#3A1F6B",
       "play_url": "https://4gus71n.github.io/cartridge-games/pentaprism/index.html",
       "package_url": "https://4gus71n.github.io/cartridge-games/packages/pentaprism.zip",
-      "package_sha256": "cfcab95ef2f9fcece91a19878b70274d0217a1a3ab55f70c1d24587835a24c4d",
-      "package_bytes": 10245013,
-      "thumbnail_url": "https://4gus71n.github.io/cartridge-games/pentaprism/poster.png?v=79c197fdd9",
-      "updated_at": "2026-10-16T22:10:38+00:00"
+      "package_sha256": "c453071b7bdc778e8c8f1ecce24a89af3f685e13b853c02bfb24126389c8ad27",
+      "package_bytes": 10260945,
+      "thumbnail_url": "https://4gus71n.github.io/cartridge-games/pentaprism/poster.png?v=43456965cb",
+      "updated_at": "2026-10-21T16:08:14+00:00"
     },
     {
       "slug": "pinpoint",
-      "version": 1,
+      "version": 2,
       "title": "Pinpoint",
       "title_es": "Pinpoint",
       "description": "A photo from somewhere on Earth: drop a pin where you think it was taken.",
@@ -177,10 +177,10 @@
       "accent_bottom": "#5A1E1A",
       "play_url": "https://4gus71n.github.io/cartridge-games/pinpoint/index.html",
       "package_url": "https://4gus71n.github.io/cartridge-games/packages/pinpoint.zip",
-      "package_sha256": "5d229142f1ddc976b25775b6cb5fea2600d5a75ebe5b4f0e27c4dc3b54d59c3c",
-      "package_bytes": 24430871,
+      "package_sha256": "408351ea0a4768790041cd7c95fc175cf7838b6c05be626189d1ddcdb5d90532",
+      "package_bytes": 27021673,
       "thumbnail_url": "https://4gus71n.github.io/cartridge-games/pinpoint/poster.png?v=03c0863a7f",
-      "updated_at": "2026-10-17T17:42:21+00:00"
+      "updated_at": "2026-10-21T22:17:35+00:00"
     },
     {
       "slug": "right-of-way",
@@ -229,10 +229,10 @@
       "accent_bottom": "#4A2A08",
       "play_url": "https://4gus71n.github.io/cartridge-games/sudoku/index.html",
       "package_url": "https://4gus71n.github.io/cartridge-games/packages/sudoku.zip",
-      "package_sha256": "84ea4e72df037238e808aefe31200d4a612e2cd7120f317d7f353d2af764333a",
-      "package_bytes": 10294567,
+      "package_sha256": "873af3725b943c495d9c3c387a1c7f2dd7ace844ed49949a48937f1f05400049",
+      "package_bytes": 10296236,
       "thumbnail_url": "https://4gus71n.github.io/cartridge-games/sudoku/poster.png?v=5af58854ad",
-      "updated_at": "2026-10-17T08:54:51+00:00"
+      "updated_at": "2026-10-21T07:46:20+00:00"
     },
     {
       "slug": "trajectory",
@@ -254,10 +254,10 @@
       "accent_bottom": "#0E3346",
       "play_url": "https://4gus71n.github.io/cartridge-games/trajectory/index.html",
       "package_url": "https://4gus71n.github.io/cartridge-games/packages/trajectory.zip",
-      "package_sha256": "c8b2bb721d839c25ac903cd5a72fe87a9f0d3a2308c837e913e0863665655edd",
-      "package_bytes": 10278487,
+      "package_sha256": "8381d19b71bd4eb2368b703837d1d2524d5e566dca0fdf6938893cf14800a330",
+      "package_bytes": 10280160,
       "thumbnail_url": "https://4gus71n.github.io/cartridge-games/trajectory/poster.png?v=92c2220cb2",
-      "updated_at": "2026-10-16T22:10:25+00:00"
+      "updated_at": "2026-10-21T07:46:43+00:00"
     }
   ]
 }

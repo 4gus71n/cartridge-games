@@ -1,10 +1,10 @@
 {
   "slug": "pentaprism",
-  "version": 1,
+  "version": 2,
   "title": "Pentaprism",
   "title_es": "Pentaprisma",
-  "description": "Drop two-colour pentominoes, match 4 gems, chain the cascades.",
-  "description_es": "Deja caer pentominós bicolores, junta 4 gemas y encadena cascadas.",
+  "description": "Pentominoes lock rigid: match 5 gems, clear rows, crack the rising stone.",
+  "description_es": "Los pentominós caen rígidos: junta 5 gemas, limpia filas, rompe la piedra que sube.",
   "author": "Cartridge Studio",
   "license": "All rights reserved",
   "orientation": "portrait",
