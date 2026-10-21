@@ -250,7 +250,7 @@
    "description_es": "Sudoku clásico 9×9: puzles graduados, notas, pistas y racha diaria.",
    "license_spdx": "All rights reserved",
    "orientation": "portrait",
-   "package_sha256": "84ea4e72df037238e808aefe31200d4a612e2cd7120f317d7f353d2af764333a",
+   "package_sha256": "5f59d0de8ba2b9aa5a97d2bdc0b35a3d80a58044e289a34a8eb10affd5e6be70",
    "package_url": "https://4gus71n.github.io/cartridge-games/packages/sudoku.zip",
    "play_url": "https://4gus71n.github.io/cartridge-games/sudoku/index.html",
    "poster_style": "TAP",
@@ -262,7 +262,7 @@
    "thumbnail_url": "https://4gus71n.github.io/cartridge-games/sudoku/poster.png?v=5af58854ad",
    "title": "Sudoku",
    "title_es": "Sudoku",
-   "updated_at": "2026-10-18T18:59:34.435791",
+   "updated_at": "2026-10-21T07:31:03.072594",
    "version": 1
   },
   {
@@ -386,6 +386,6 @@
    "version": 1
   }
  ],
- "generated_at": "2026-10-21T07:30:28+00:00",
- "sha256": "c94b211f3ba19633e44d8d3870aa10982a80b19ddff3f90695e9d62e7b164210"
+ "generated_at": "2026-10-21T07:31:03+00:00",
+ "sha256": "069fb79c838ea6226fa1514d29b2a90c3490b8cf67da492754048590ab40b9a1"
 }
