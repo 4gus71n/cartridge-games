@@ -322,7 +322,7 @@
    "description_es": "Una foto de algún lugar del mundo: pon un pin donde crees que se tomó.",
    "license_spdx": "All rights reserved",
    "orientation": "portrait",
-   "package_sha256": "5d229142f1ddc976b25775b6cb5fea2600d5a75ebe5b4f0e27c4dc3b54d59c3c",
+   "package_sha256": "408351ea0a4768790041cd7c95fc175cf7838b6c05be626189d1ddcdb5d90532",
    "package_url": "https://4gus71n.github.io/cartridge-games/packages/pinpoint.zip",
    "play_url": "https://4gus71n.github.io/cartridge-games/pinpoint/index.html",
    "poster_style": "TAP",
@@ -334,8 +334,8 @@
    "thumbnail_url": "https://4gus71n.github.io/cartridge-games/pinpoint/poster.png?v=03c0863a7f",
    "title": "Pinpoint",
    "title_es": "Pinpoint",
-   "updated_at": "2026-10-18T18:59:34.435792",
-   "version": 1
+   "updated_at": "2026-10-21T22:21:45.571002",
+   "version": 2
   },
   {
    "accent_bottom": "#0E4D4A",
@@ -386,6 +386,6 @@
    "version": 1
   }
  ],
- "generated_at": "2026-10-21T16:29:23+00:00",
- "sha256": "03a2e60af0172e2d56fe4713ce9b8125fa05552921ef1851cc3038e1b8b1d186"
+ "generated_at": "2026-10-21T22:21:45+00:00",
+ "sha256": "386ebb8d309fb5d8ebb5a7d89af0d493dc5b10a7f25357af7b2901cb2973edc3"
 }
