@@ -130,7 +130,7 @@
    "description_es": "Buscaminas sin adivinar: todos los tableros se resuelven con lógica.",
    "license_spdx": "All rights reserved",
    "orientation": "portrait",
-   "package_sha256": "8f4bbc9a6d6c634c6829cfadf21547b292cc752080b251bfddc56d44c0709fa7",
+   "package_sha256": "f9d4cb38997522efd482b3951e3f6a606ce9d65dc7ce4ebf5ab8eae56277e11a",
    "package_url": "https://4gus71n.github.io/cartridge-games/packages/minefield.zip",
    "play_url": "https://4gus71n.github.io/cartridge-games/minefield/index.html",
    "poster_style": "MINE",
@@ -142,7 +142,7 @@
    "thumbnail_url": "",
    "title": "Minefield",
    "title_es": "Buscaminas",
-   "updated_at": "2026-10-18T18:59:34.435254",
+   "updated_at": "2026-10-21T07:47:41.772954",
    "version": 2
   },
   {
@@ -202,7 +202,7 @@
    "description_es": "Guía un cohete con matemáticas: escribe y = f(x) y pasa por todos los objetivos.",
    "license_spdx": "All rights reserved",
    "orientation": "portrait",
-   "package_sha256": "c8b2bb721d839c25ac903cd5a72fe87a9f0d3a2308c837e913e0863665655edd",
+   "package_sha256": "8381d19b71bd4eb2368b703837d1d2524d5e566dca0fdf6938893cf14800a330",
    "package_url": "https://4gus71n.github.io/cartridge-games/packages/trajectory.zip",
    "play_url": "https://4gus71n.github.io/cartridge-games/trajectory/index.html",
    "poster_style": "TAP",
@@ -214,7 +214,7 @@
    "thumbnail_url": "https://4gus71n.github.io/cartridge-games/trajectory/poster.png?v=92c2220cb2",
    "title": "Trajectory",
    "title_es": "Trayectoria",
-   "updated_at": "2026-10-18T18:59:34.435791",
+   "updated_at": "2026-10-21T07:47:41.772957",
    "version": 1
   },
   {
@@ -250,7 +250,7 @@
    "description_es": "Sudoku clásico 9×9: puzles graduados, notas, pistas y racha diaria.",
    "license_spdx": "All rights reserved",
    "orientation": "portrait",
-   "package_sha256": "5f59d0de8ba2b9aa5a97d2bdc0b35a3d80a58044e289a34a8eb10affd5e6be70",
+   "package_sha256": "873af3725b943c495d9c3c387a1c7f2dd7ace844ed49949a48937f1f05400049",
    "package_url": "https://4gus71n.github.io/cartridge-games/packages/sudoku.zip",
    "play_url": "https://4gus71n.github.io/cartridge-games/sudoku/index.html",
    "poster_style": "TAP",
@@ -262,7 +262,7 @@
    "thumbnail_url": "https://4gus71n.github.io/cartridge-games/sudoku/poster.png?v=5af58854ad",
    "title": "Sudoku",
    "title_es": "Sudoku",
-   "updated_at": "2026-10-21T07:31:03.072594",
+   "updated_at": "2026-10-21T07:47:41.772958",
    "version": 1
   },
   {
@@ -298,7 +298,7 @@
    "description_es": "Un roguelike de bolsillo: baja 12 pisos, sobrevive y recupera el amuleto.",
    "license_spdx": "All rights reserved",
    "orientation": "portrait",
-   "package_sha256": "80b2d76fee7169e1348d04eef0d55d4a4baeb52b58eafe153ddc5743d57708a5",
+   "package_sha256": "efce093232da6d32365690e4341c056ad4daaeac3f507daa0746294898a32390",
    "package_url": "https://4gus71n.github.io/cartridge-games/packages/delve.zip",
    "play_url": "https://4gus71n.github.io/cartridge-games/delve/index.html",
    "poster_style": "TAP",
@@ -310,7 +310,7 @@
    "thumbnail_url": "https://4gus71n.github.io/cartridge-games/delve/poster.png?v=3664a0e82d",
    "title": "Delve",
    "title_es": "Delve",
-   "updated_at": "2026-10-18T18:59:34.435792",
+   "updated_at": "2026-10-21T07:47:41.772958",
    "version": 1
   },
   {
@@ -346,7 +346,7 @@
    "description_es": "Escucha una voz real leyendo un libro y adivina en qué idioma habla.",
    "license_spdx": "All rights reserved",
    "orientation": "portrait",
-   "package_sha256": "43def8324452d0a3fd01cd79c051a26838ad58251817aad479813ddff8c96e56",
+   "package_sha256": "316aa4bc9908c7776e256d8728d5d239a185b914a966ead1a607c4b9ffe55de1",
    "package_url": "https://4gus71n.github.io/cartridge-games/packages/babel-ear.zip",
    "play_url": "https://4gus71n.github.io/cartridge-games/babel-ear/index.html",
    "poster_style": "TAP",
@@ -358,7 +358,7 @@
    "thumbnail_url": "https://4gus71n.github.io/cartridge-games/babel-ear/poster.png?v=a8f0283cf9",
    "title": "Babel Ear",
    "title_es": "Oído de Babel",
-   "updated_at": "2026-10-18T18:59:34.435792",
+   "updated_at": "2026-10-21T07:47:41.772958",
    "version": 1
   },
   {
@@ -386,6 +386,6 @@
    "version": 1
   }
  ],
- "generated_at": "2026-10-21T07:31:03+00:00",
- "sha256": "069fb79c838ea6226fa1514d29b2a90c3490b8cf67da492754048590ab40b9a1"
+ "generated_at": "2026-10-21T07:47:42+00:00",
+ "sha256": "361723f1dcaeb5096f8b85d41620bd17d1523208a2b21729b38fc3092069e91a"
 }
