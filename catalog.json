@@ -174,11 +174,11 @@
    "accent_top": "#0D0B1E",
    "author": "Cartridge Studio",
    "bundled": false,
-   "description": "Drop two-colour pentominoes, match 4 gems, chain the cascades.",
-   "description_es": "Deja caer pentominós bicolores, junta 4 gemas y encadena cascadas.",
+   "description": "Pentominoes lock rigid: match 5 gems, clear rows, crack the rising stone.",
+   "description_es": "Los pentominós caen rígidos: junta 5 gemas, limpia filas, rompe la piedra que sube.",
    "license_spdx": "All rights reserved",
    "orientation": "portrait",
-   "package_sha256": "cfcab95ef2f9fcece91a19878b70274d0217a1a3ab55f70c1d24587835a24c4d",
+   "package_sha256": "c453071b7bdc778e8c8f1ecce24a89af3f685e13b853c02bfb24126389c8ad27",
    "package_url": "https://4gus71n.github.io/cartridge-games/packages/pentaprism.zip",
    "play_url": "https://4gus71n.github.io/cartridge-games/pentaprism/index.html",
    "poster_style": "TAP",
@@ -187,11 +187,11 @@
    "status": "verified",
    "tags": "puzzle,arcade,falling-blocks",
    "taken_down": false,
-   "thumbnail_url": "https://4gus71n.github.io/cartridge-games/pentaprism/poster.png?v=79c197fdd9",
+   "thumbnail_url": "https://4gus71n.github.io/cartridge-games/pentaprism/poster.png?v=43456965cb",
    "title": "Pentaprism",
    "title_es": "Pentaprisma",
-   "updated_at": "2026-10-18T18:59:34.435790",
-   "version": 1
+   "updated_at": "2026-10-21T16:09:19.076431",
+   "version": 2
   },
   {
    "accent_bottom": "#0E3346",
@@ -386,6 +386,6 @@
    "version": 1
   }
  ],
- "generated_at": "2026-10-21T07:47:42+00:00",
- "sha256": "361723f1dcaeb5096f8b85d41620bd17d1523208a2b21729b38fc3092069e91a"
+ "generated_at": "2026-10-21T16:09:19+00:00",
+ "sha256": "e142644810841c0b87712f08650c72409917b69271b3452868fa475c3386dfac"
 }
