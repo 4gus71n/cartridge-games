@@ -184,11 +184,11 @@
     },
     {
       "slug": "right-of-way",
-      "version": 1,
+      "version": 2,
       "title": "Right of Way",
       "title_es": "Prioridad",
-      "description": "A road sign flashes up: pick the right move before the clock runs out.",
-      "description_es": "Aparece una señal de tránsito: elige qué hacer antes de que se acabe el tiempo.",
+      "description": "Read the sign, pick the move before the timer runs out. 95 European road signs.",
+      "description_es": "Lee la señal y elige qué hacer antes de que se acabe el tiempo. 95 señales europeas.",
       "author": "Cartridge Studio",
       "license": "All rights reserved",
       "orientation": "portrait",
@@ -203,10 +203,10 @@
       "accent_bottom": "#4A3200",
       "play_url": "https://4gus71n.github.io/cartridge-games/right-of-way/index.html",
       "package_url": "https://4gus71n.github.io/cartridge-games/packages/right-of-way.zip",
-      "package_sha256": "aea77645773d41ee702538fcba6385bcd272ef70e58338f8c4a99094d1352fc0",
-      "package_bytes": 10273751,
+      "package_sha256": "f4364f9eae906b42f906dc2cf59cb5a8900320f6d629d3e5e7f9bfe2de5bd042",
+      "package_bytes": 10292000,
       "thumbnail_url": "https://4gus71n.github.io/cartridge-games/right-of-way/poster.png?v=3f0d40e8ab",
-      "updated_at": "2026-10-17T08:39:38+00:00"
+      "updated_at": "2026-10-22T16:05:56+00:00"
     },
     {
       "slug": "sudoku",

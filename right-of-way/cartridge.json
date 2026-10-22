@@ -1,10 +1,10 @@
 {
   "slug": "right-of-way",
-  "version": 1,
+  "version": 2,
   "title": "Right of Way",
   "title_es": "Prioridad",
-  "description": "A road sign flashes up: pick the right move before the clock runs out.",
-  "description_es": "Aparece una señal de tránsito: elige qué hacer antes de que se acabe el tiempo.",
+  "description": "Read the sign, pick the move before the timer runs out. 95 European road signs.",
+  "description_es": "Lee la señal y elige qué hacer antes de que se acabe el tiempo. 95 señales europeas.",
   "author": "Cartridge Studio",
   "license": "All rights reserved",
   "orientation": "portrait",
