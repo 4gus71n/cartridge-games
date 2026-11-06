@@ -384,8 +384,32 @@
    "title_es": "",
    "updated_at": "2026-10-18T19:15:03.131121",
    "version": 1
+  },
+  {
+   "accent_bottom": "#5A3B10",
+   "accent_top": "#0E1116",
+   "author": "Cartridge Studio",
+   "bundled": false,
+   "description": "The Viking game of kings: smuggle the king out, or trap him before he flees.",
+   "description_es": "El juego de reyes vikingo: saca al rey del tablero o atrápalo antes de que huya.",
+   "license_spdx": "All rights reserved",
+   "orientation": "portrait",
+   "package_sha256": "c2e8766648f5d3775cbe93052c770490b612dc003a63eef0a85c7839d41d9a86",
+   "package_url": "https://4gus71n.github.io/cartridge-games/packages/tafl.zip",
+   "play_url": "https://4gus71n.github.io/cartridge-games/tafl/index.html",
+   "poster_style": "TAP",
+   "slug": "tafl",
+   "source_url": "",
+   "status": "verified",
+   "tags": "board,strategy,classic,two-player",
+   "taken_down": false,
+   "thumbnail_url": "https://4gus71n.github.io/cartridge-games/tafl/poster.png?v=fe59c8aadd",
+   "title": "Tafl",
+   "title_es": "Tafl",
+   "updated_at": "2026-11-06T16:09:25.603597",
+   "version": 1
   }
  ],
- "generated_at": "2026-10-22T16:08:57+00:00",
- "sha256": "a5bf6ccbe6fa97ed6fc69b1c12628d8c485c71190b64736c8a9808cdad1d2b88"
+ "generated_at": "2026-11-06T16:09:25+00:00",
+ "sha256": "14ae4b8a6969bfefe7b69c0fef9428fe785955efca9e5c6a0664d7ea92d7a525"
 }
