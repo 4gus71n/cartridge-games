@@ -1,0 +1,20 @@
+{
+  "slug": "tafl",
+  "version": 1,
+  "title": "Tafl",
+  "title_es": "Tafl",
+  "description": "The Viking game of kings: smuggle the king out, or trap him before he flees.",
+  "description_es": "El juego de reyes vikingo: saca al rey del tablero o atrápalo antes de que huya.",
+  "author": "Cartridge Studio",
+  "license": "All rights reserved",
+  "orientation": "portrait",
+  "tags": [
+    "board",
+    "strategy",
+    "classic",
+    "two-player"
+  ],
+  "poster_style": "TAP",
+  "accent_top": "#0E1116",
+  "accent_bottom": "#5A3B10"
+}
